@@ -27,10 +27,11 @@ DerivedData/
 !default.perspectivev3
 
 ### Xcode Patch ###
-*.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+### Carthage ###
+Carthage/
 # End of https://www.gitignore.io/api/xcode
