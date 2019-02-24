@@ -40,10 +40,10 @@ class MainTabBarController: UIViewController {
     
     override func viewDidLoad() {
         
-        let storyboard = UIStoryboard(name: "ArticleListViewController", bundle: Bundle(for: ArticleListViewController.self))
-        let articleViewController = storyboard.instantiateViewController(withIdentifier: "articleList") as! ArticleListViewController
-        articleViewController.view.frame = contentView.bounds
-        contentView.addSubview(articleViewController.view)
+        let storyboard = UIStoryboard(name: "ItemListViewController", bundle: Bundle(for: ItemListViewController.self))
+        let itemListViewController = storyboard.instantiateViewController(withIdentifier: "itemList") as! ItemListViewController
+        itemListViewController.view.frame = contentView.bounds
+        contentView.addSubview(itemListViewController.view)
         
     }
     

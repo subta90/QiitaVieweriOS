@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Article List View Controller-->
+        <!--Item List View Controller-->
         <scene sceneID="byt-6h-bt8">
             <objects>
-                <viewController storyboardIdentifier="articleList" id="oxP-eL-OiD" customClass="ArticleListViewController" customModule="QiitaVieweriOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="itemList" id="oxP-eL-OiD" customClass="ItemListViewController" customModule="QiitaVieweriOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mbh-TU-4nv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,5 +1,5 @@
 //
-//  ArticleListViewModel.swift
+//  ItemListViewModel.swift
 //  QiitaVieweriOS
 //
 //  Created by subta on 2019/02/24.

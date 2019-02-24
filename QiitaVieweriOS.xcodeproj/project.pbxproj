@@ -13,11 +13,15 @@
 		C5912B912221217D009B1D33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5912B8F2221217D009B1D33 /* LaunchScreen.storyboard */; };
 		C5912B9C2221217D009B1D33 /* QiitaVieweriOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912B9B2221217D009B1D33 /* QiitaVieweriOSTests.swift */; };
 		C5912BA72221217E009B1D33 /* QiitaVieweriOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BA62221217E009B1D33 /* QiitaVieweriOSUITests.swift */; };
-		C5912BB6222137B1009B1D33 /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BB5222137B1009B1D33 /* ArticleListViewController.swift */; };
+		C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BB5222137B1009B1D33 /* ItemListViewController.swift */; };
 		C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BB722213954009B1D33 /* MainTabBarController.swift */; };
 		C5912BBB22213A6E009B1D33 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BBA22213A6D009B1D33 /* RxSwift.framework */; };
 		C5912BBD22213A81009B1D33 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BBC22213A81009B1D33 /* RxCocoa.framework */; };
-		C5912BC022225ADA009B1D33 /* ArticleListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5912BBF22225ADA009B1D33 /* ArticleListViewController.storyboard */; };
+		C5912BC022225ADA009B1D33 /* ItemListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5912BBF22225ADA009B1D33 /* ItemListViewController.storyboard */; };
+		C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BC3222269C5009B1D33 /* ItemListViewModel.swift */; };
+		C5912BC622226A26009B1D33 /* ItemListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BC522226A26009B1D33 /* ItemListModel.swift */; };
+		C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BC722226EE5009B1D33 /* APIKit.framework */; };
+		C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BC922227F52009B1D33 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +54,15 @@
 		C5912BA22221217E009B1D33 /* QiitaVieweriOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QiitaVieweriOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5912BA62221217E009B1D33 /* QiitaVieweriOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaVieweriOSUITests.swift; sourceTree = "<group>"; };
 		C5912BA82221217E009B1D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5912BB5222137B1009B1D33 /* ArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
+		C5912BB5222137B1009B1D33 /* ItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewController.swift; sourceTree = "<group>"; };
 		C5912BB722213954009B1D33 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C5912BBA22213A6D009B1D33 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		C5912BBC22213A81009B1D33 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		C5912BBF22225ADA009B1D33 /* ArticleListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleListViewController.storyboard; sourceTree = "<group>"; };
+		C5912BBF22225ADA009B1D33 /* ItemListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemListViewController.storyboard; sourceTree = "<group>"; };
+		C5912BC3222269C5009B1D33 /* ItemListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListViewModel.swift; sourceTree = "<group>"; };
+		C5912BC522226A26009B1D33 /* ItemListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModel.swift; sourceTree = "<group>"; };
+		C5912BC722226EE5009B1D33 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		C5912BC922227F52009B1D33 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */,
+				C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */,
 				C5912BBD22213A81009B1D33 /* RxCocoa.framework in Frameworks */,
 				C5912BBB22213A6E009B1D33 /* RxSwift.framework in Frameworks */,
 			);
@@ -108,6 +118,8 @@
 		C5912B852221217A009B1D33 /* QiitaVieweriOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5912BC22222696B009B1D33 /* Model */,
+				C5912BC122226961009B1D33 /* ViewModel */,
 				C5912BB42221378E009B1D33 /* View */,
 				C5912B862221217A009B1D33 /* AppDelegate.swift */,
 				C5912B8A2221217A009B1D33 /* Main.storyboard */,
@@ -139,8 +151,8 @@
 		C5912BB42221378E009B1D33 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BB5222137B1009B1D33 /* ArticleListViewController.swift */,
-				C5912BBF22225ADA009B1D33 /* ArticleListViewController.storyboard */,
+				C5912BB5222137B1009B1D33 /* ItemListViewController.swift */,
+				C5912BBF22225ADA009B1D33 /* ItemListViewController.storyboard */,
 				C5912BB722213954009B1D33 /* MainTabBarController.swift */,
 			);
 			path = View;
@@ -149,10 +161,28 @@
 		C5912BB922213A6C009B1D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5912BC922227F52009B1D33 /* Result.framework */,
+				C5912BC722226EE5009B1D33 /* APIKit.framework */,
 				C5912BBC22213A81009B1D33 /* RxCocoa.framework */,
 				C5912BBA22213A6D009B1D33 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5912BC122226961009B1D33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BC3222269C5009B1D33 /* ItemListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C5912BC22222696B009B1D33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +292,7 @@
 			files = (
 				C5912B912221217D009B1D33 /* LaunchScreen.storyboard in Resources */,
 				C5912B8E2221217D009B1D33 /* Assets.xcassets in Resources */,
-				C5912BC022225ADA009B1D33 /* ArticleListViewController.storyboard in Resources */,
+				C5912BC022225ADA009B1D33 /* ItemListViewController.storyboard in Resources */,
 				C5912B8C2221217A009B1D33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +324,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -310,8 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5912BC622226A26009B1D33 /* ItemListModel.swift in Sources */,
 				C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */,
-				C5912BB6222137B1009B1D33 /* ArticleListViewController.swift in Sources */,
+				C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */,
+				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
