@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class ArticleListViewController: UIViewController {
+class ItemListViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,7 +20,7 @@ class ArticleListViewController: UIViewController {
     }
 }
 
-extension ArticleListViewController: UITableViewDataSource {
+extension ItemListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
