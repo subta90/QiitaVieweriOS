@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C570A5452228A5D900B68BBE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; };
+		C570A5462228A5F800B68BBE /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912B862221217A009B1D33 /* AppDelegate.swift */; };
 		C5912B8C2221217A009B1D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5912B8A2221217A009B1D33 /* Main.storyboard */; };
 		C5912B8E2221217D009B1D33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5912B8D2221217D009B1D33 /* Assets.xcassets */; };
@@ -22,6 +24,13 @@
 		C5912BC622226A26009B1D33 /* ItemListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BC522226A26009B1D33 /* ItemListModel.swift */; };
 		C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BC722226EE5009B1D33 /* APIKit.framework */; };
 		C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BC922227F52009B1D33 /* Result.framework */; };
+		C5912BCC2222844D009B1D33 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BCB2222844D009B1D33 /* Quick.framework */; };
+		C5912BCE2222845B009B1D33 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5912BCD2222845B009B1D33 /* Nimble.framework */; };
+		C5912BD02222848D009B1D33 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5912BCD2222845B009B1D33 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5912BD122228497009B1D33 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5912BCB2222844D009B1D33 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */; };
+		C5912BD822228577009B1D33 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C5912BD722228577009B1D33 /* items.json */; };
+		C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +50,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C5912BCF22228467009B1D33 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C570A5462228A5F800B68BBE /* OHHTTPStubs.framework in CopyFiles */,
+				C5912BD122228497009B1D33 /* Quick.framework in CopyFiles */,
+				C5912BD02222848D009B1D33 /* Nimble.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		C5912B832221217A009B1D33 /* QiitaVieweriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaVieweriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5912B862221217A009B1D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5912B8B2221217A009B1D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +88,11 @@
 		C5912BC522226A26009B1D33 /* ItemListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModel.swift; sourceTree = "<group>"; };
 		C5912BC722226EE5009B1D33 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
 		C5912BC922227F52009B1D33 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C5912BCB2222844D009B1D33 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		C5912BCD2222845B009B1D33 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModelSpec.swift; sourceTree = "<group>"; };
+		C5912BD722228577009B1D33 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C570A5452228A5D900B68BBE /* OHHTTPStubs.framework in Frameworks */,
+				C5912BCE2222845B009B1D33 /* Nimble.framework in Frameworks */,
+				C5912BCC2222844D009B1D33 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +151,7 @@
 		C5912B852221217A009B1D33 /* QiitaVieweriOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5DDC840222A693000A6C9BB /* Utility */,
 				C5912BC22222696B009B1D33 /* Model */,
 				C5912BC122226961009B1D33 /* ViewModel */,
 				C5912BB42221378E009B1D33 /* View */,
@@ -133,7 +167,8 @@
 		C5912B9A2221217D009B1D33 /* QiitaVieweriOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				C5912B9B2221217D009B1D33 /* QiitaVieweriOSTests.swift */,
+				C5912BD622228516009B1D33 /* resource */,
+				C5912BD52222850B009B1D33 /* src */,
 				C5912B9D2221217D009B1D33 /* Info.plist */,
 			);
 			path = QiitaVieweriOSTests;
@@ -161,6 +196,9 @@
 		C5912BB922213A6C009B1D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */,
+				C5912BCD2222845B009B1D33 /* Nimble.framework */,
+				C5912BCB2222844D009B1D33 /* Quick.framework */,
 				C5912BC922227F52009B1D33 /* Result.framework */,
 				C5912BC722226EE5009B1D33 /* APIKit.framework */,
 				C5912BBC22213A81009B1D33 /* RxCocoa.framework */,
@@ -180,9 +218,58 @@
 		C5912BC22222696B009B1D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
+				C5DDC83F222A690700A6C9BB /* ItemList */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C5912BD2222284AA009B1D33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C5912BD52222850B009B1D33 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C5912B9B2221217D009B1D33 /* QiitaVieweriOSTests.swift */,
+				C5912BD2222284AA009B1D33 /* Model */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C5912BD622228516009B1D33 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BD722228577009B1D33 /* items.json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		C5DDC83C222A688700A6C9BB /* DataParser */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */,
+			);
+			path = DataParser;
+			sourceTree = "<group>";
+		};
+		C5DDC83F222A690700A6C9BB /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
+			);
+			path = ItemList;
+			sourceTree = "<group>";
+		};
+		C5DDC840222A693000A6C9BB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				C5DDC83C222A688700A6C9BB /* DataParser */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +300,7 @@
 				C5912B932221217D009B1D33 /* Sources */,
 				C5912B942221217D009B1D33 /* Frameworks */,
 				C5912B952221217D009B1D33 /* Resources */,
+				C5912BCF22228467009B1D33 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -301,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5912BD822228577009B1D33 /* items.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +433,7 @@
 			files = (
 				C5912BC622226A26009B1D33 /* ItemListModel.swift in Sources */,
 				C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */,
+				C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */,
 				C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */,
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
@@ -355,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5912B9C2221217D009B1D33 /* QiitaVieweriOSTests.swift in Sources */,
+				C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +612,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -564,7 +657,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaVieweriOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -584,7 +682,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QiitaVieweriOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

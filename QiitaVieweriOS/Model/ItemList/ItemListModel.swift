@@ -39,9 +39,18 @@ struct GetItemsRequest: Request {
     }
     
     var queryParameters: [String : Any]? {
-        return ["page": page,
-                "per_page": perPage,
-                "query": query]
+        var parameters = ["page": page,
+                          "per_page": perPage]
+        
+        if let query = query {
+            parameters["query"] = query
+        }
+        
+        return parameters
+    }
+    
+    var dataParser: DataParser {
+        return DecodableDataParser()
     }
     
     func response(from object: Any, urlResponse: HTTPURLResponse) throws -> [Item] {
@@ -53,9 +62,9 @@ struct GetItemsRequest: Request {
     
     private let page: String
     private let perPage: String
-    private let query: String
+    private let query: String?
     
-    init(page: String, perPage: String, query: String) {
+    init(page: String, perPage: String, query: String?) {
         self.page = page
         self.perPage = perPage
         self.query = query
@@ -63,16 +72,20 @@ struct GetItemsRequest: Request {
     
 }
 
-class ItemListModel {
+protocol ItemListModelProtocol {
+    func fetchItems(page: String, perPage: String, query: String?) -> Observable<[Item]>
+}
+
+class ItemListModel: ItemListModelProtocol {
     
-    func fetchItems(page: String, perPage: String, query: String) -> Observable<[Item]> {
+    func fetchItems(page: String, perPage: String, query: String?) -> Observable<[Item]> {
         return Observable.create { observer in
             let request = GetItemsRequest(page: page, perPage: perPage, query: query)
             
             Session.send(request) { result in
                 switch result {
                 case .success(let items):
-                    print("items] \(items)")
+                    print("items: \(items)")
                     observer.onNext(items)
                     observer.onCompleted()
                 case .failure(let error):
