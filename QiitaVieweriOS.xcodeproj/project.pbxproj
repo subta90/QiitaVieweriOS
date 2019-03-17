@@ -31,6 +31,8 @@
 		C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */; };
 		C5912BD822228577009B1D33 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C5912BD722228577009B1D33 /* items.json */; };
 		C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC5223CC48E00C8CE13 /* Item.swift */; };
+		C59A7FC8223DF5FE00C8CE13 /* ProfileImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */; };
+		C59A7FCC223DF97B00C8CE13 /* ProfileImageModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FCA223DF97600C8CE13 /* ProfileImageModelSpec.swift */; };
 		C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C25203222B9E21000BD03A /* ItemListTableCell.swift */; };
 		C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C25207222B9E82000BD03A /* ItemListTableCell.xib */; };
 		C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */; };
@@ -96,6 +98,8 @@
 		C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModelSpec.swift; sourceTree = "<group>"; };
 		C5912BD722228577009B1D33 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		C59A7FC5223CC48E00C8CE13 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModel.swift; sourceTree = "<group>"; };
+		C59A7FCA223DF97600C8CE13 /* ProfileImageModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModelSpec.swift; sourceTree = "<group>"; };
 		C5C25203222B9E21000BD03A /* ItemListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableCell.swift; sourceTree = "<group>"; };
 		C5C25207222B9E82000BD03A /* ItemListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableCell.xib; sourceTree = "<group>"; };
 		C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
@@ -231,7 +235,7 @@
 		C5912BD2222284AA009B1D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */,
+				C59A7FC9223DF94E00C8CE13 /* ItemList */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,6 +255,15 @@
 				C5912BD722228577009B1D33 /* items.json */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		C59A7FC9223DF94E00C8CE13 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				C59A7FCA223DF97600C8CE13 /* ProfileImageModelSpec.swift */,
+				C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */,
+			);
+			path = ItemList;
 			sourceTree = "<group>";
 		};
 		C5C25200222B9DE1000BD03A /* ItemList */ = {
@@ -277,6 +290,7 @@
 			children = (
 				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
 				C59A7FC5223CC48E00C8CE13 /* Item.swift */,
+				C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -473,6 +487,7 @@
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
 				C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */,
+				C59A7FC8223DF5FE00C8CE13 /* ProfileImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5912B9C2221217D009B1D33 /* QiitaVieweriOSTests.swift in Sources */,
+				C59A7FCC223DF97B00C8CE13 /* ProfileImageModelSpec.swift in Sources */,
 				C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

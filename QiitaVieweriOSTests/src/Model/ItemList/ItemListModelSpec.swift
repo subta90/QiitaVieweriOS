@@ -37,8 +37,10 @@ class ItemListModelSpec: QuickSpec {
                             items in
                             expect(items[0].title).to(equal("Example title"))
                             expect(items[0].user.id).to(equal("yaotti"))
+                            expect(items[0].user.profileImageUrl).to(equal("https://si0.twimg.com/profile_images/2309761038/1ijg13pfs0dg84sk2y0h_normal.jpeg"))
                             expect(items[1].title).to(equal("Example title 2"))
                             expect(items[1].user.id).to(equal("yaotti2"))
+                            expect(items[1].user.profileImageUrl).to(equal("https://si0.twimg.com/profile_images/2309761038/1ijg13pfs0dg84sk2y0h_normal2.jpeg"))
                             done()
                             }).disposed(by: self.disposeBag)
                     }

@@ -25,12 +25,15 @@ struct Item: Codable {
 
 struct User: Codable {
     let id: String
+    let profileImageUrl: String
     
     private enum CodingKeys: String, CodingKey {
         case id
+        case profileImageUrl = "profile_image_url"
     }
     
-    init(id: String) {
+    init(id: String, profileImageUrl: String) {
         self.id = id
+        self.profileImageUrl = profileImageUrl
     }
 }
