@@ -10,18 +10,6 @@ import Foundation
 import APIKit
 import RxSwift
 
-struct Item: Codable {
-    let id: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case id
-    }
-    
-    init(id: String) {
-        self.id = id
-    }
-}
-
 struct GetItemsRequest: Request {
     
     typealias Response = [Item]

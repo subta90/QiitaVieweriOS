@@ -35,8 +35,10 @@ class ItemListModelSpec: QuickSpec {
                         let model = ItemListModel()
                         model.fetchItems(page: "1", perPage: "20", query: nil).subscribe( onNext: {
                             items in
-                            expect(items[0].id).to(equal("4bd431809afb1bb99e4f"))
-                            expect(items[1].id).to(equal("4bd431809afb1bb99e4a"))
+                            expect(items[0].title).to(equal("Example title"))
+                            expect(items[0].user.id).to(equal("yaotti"))
+                            expect(items[1].title).to(equal("Example title 2"))
+                            expect(items[1].user.id).to(equal("yaotti2"))
                             done()
                             }).disposed(by: self.disposeBag)
                     }

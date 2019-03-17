@@ -18,7 +18,7 @@ class ItemListViewController: UIViewController {
     private let cellIdentifier = "ItemListTableCell"
     
     // FIXME: 一番良い値の受け渡し方
-    private lazy var viewModel = ItemListViewModel(page: "1", perPage: "1", query: nil)
+    private lazy var viewModel = ItemListViewModel(page: "1", perPage: "10", query: nil)
     
     private let disposeBag = DisposeBag()
     
@@ -38,11 +38,15 @@ extension ItemListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as! ItemListTableCell
         
-        let itemId = viewModel.items[indexPath.row].id
-        cell.idLabel.text = itemId
+        let userId = viewModel.items[indexPath.row].user.id
+        cell.userIdLabel.text = userId
+        
+        let title = viewModel.items[indexPath.row].title
+        cell.titleLabel.text = title
                 
         return cell
     }
+    
 }
 
 extension ItemListViewController {

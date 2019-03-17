@@ -30,6 +30,7 @@
 		C5912BD122228497009B1D33 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5912BCB2222844D009B1D33 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */; };
 		C5912BD822228577009B1D33 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C5912BD722228577009B1D33 /* items.json */; };
+		C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC5223CC48E00C8CE13 /* Item.swift */; };
 		C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C25203222B9E21000BD03A /* ItemListTableCell.swift */; };
 		C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C25207222B9E82000BD03A /* ItemListTableCell.xib */; };
 		C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */; };
@@ -94,6 +95,7 @@
 		C5912BCD2222845B009B1D33 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModelSpec.swift; sourceTree = "<group>"; };
 		C5912BD722228577009B1D33 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		C59A7FC5223CC48E00C8CE13 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C5C25203222B9E21000BD03A /* ItemListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableCell.swift; sourceTree = "<group>"; };
 		C5C25207222B9E82000BD03A /* ItemListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableCell.xib; sourceTree = "<group>"; };
 		C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
+				C59A7FC5223CC48E00C8CE13 /* Item.swift */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */,
 				C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */,
 				C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */,
+				C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */,
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
 				C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */,
