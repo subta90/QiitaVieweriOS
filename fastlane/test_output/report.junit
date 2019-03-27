@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='QiitaVieweriOSUITests.xctest' tests='4' failures='0'>
+  <testsuite name='QiitaVieweriOSTests.ItemListModelSpec' tests='1' failures='0'>
+    <testcase classname='QiitaVieweriOSTests.ItemListModelSpec' name='fetchItems__when_request_to_items_json__success_to_fetch' time='0.824'/>
+  </testsuite>
+  <testsuite name='QiitaVieweriOSTests.QiitaVieweriOSTests' tests='2' failures='0'>
+    <testcase classname='QiitaVieweriOSTests.QiitaVieweriOSTests' name='testExample' time='0.001'/>
+    <testcase classname='QiitaVieweriOSTests.QiitaVieweriOSTests' name='testPerformanceExample' time='0.777'/>
+  </testsuite>
+  <testsuite name='QiitaVieweriOSUITests.QiitaVieweriOSUITests' tests='1' failures='0'>
+    <testcase classname='QiitaVieweriOSUITests.QiitaVieweriOSUITests' name='testExample' time='8.211'/>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+require "yaml"
+
+default_platform(:ios)
+
+CONF = YAML.load_file('conf.yml')
+
+platform :ios do
+  before_all do
+    ENV["SLACK_URL"] = CONF["slack"]["webhookurl"]
+  end
+  
+  desc "Runs all the unit tests"
+  lane :test do
+    scan(scheme: "QiitaVieweriOS", clean: true, skip_slack: false)
+  end
+
+  lane :build do
+    test
+    match(type: "adhoc")
+    gym(scheme: "QiitaVieweriOS",
+        configuration: "AdHoc",
+        clean: true,
+        export_method: "ad-hoc"
+    )
+  end 
+        
+  after_all do |lane|
+    if lane == :build
+      slack(message: "Finished.")
+    end
+  end
+
+  error do |lane, exception|
+    slack(
+      message: exception.message,
+      success: false
+    )
+  end
+end
