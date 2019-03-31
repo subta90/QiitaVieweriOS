@@ -35,3 +35,20 @@ DerivedData/
 ### Carthage ###
 Carthage/
 # End of https://www.gitignore.io/api/xcode
+
+### fastlane ###
+# fastlane specific
+**/fastlane/report.xml
+
+# deliver temporary files
+**/fastlane/Preview.html
+
+# snapshot generated screenshots
+**/fastlane/screenshots
+
+# scan temporaly files
+**/fastlane/test_output
+
+
+
+
