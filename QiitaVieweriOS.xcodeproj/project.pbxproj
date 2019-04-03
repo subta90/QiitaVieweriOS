@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C535A57722556FB20076C971 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C535A57622556FB20076C971 /* Nuke.framework */; };
 		C570A5452228A5D900B68BBE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; };
 		C570A5462228A5F800B68BBE /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912B862221217A009B1D33 /* AppDelegate.swift */; };
@@ -31,7 +32,6 @@
 		C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */; };
 		C5912BD822228577009B1D33 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C5912BD722228577009B1D33 /* items.json */; };
 		C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC5223CC48E00C8CE13 /* Item.swift */; };
-		C59A7FC8223DF5FE00C8CE13 /* ProfileImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */; };
 		C59A7FCC223DF97B00C8CE13 /* ProfileImageModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FCA223DF97600C8CE13 /* ProfileImageModelSpec.swift */; };
 		C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C25203222B9E21000BD03A /* ItemListTableCell.swift */; };
 		C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C25207222B9E82000BD03A /* ItemListTableCell.xib */; };
@@ -71,6 +71,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C535A57622556FB20076C971 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		C5912B832221217A009B1D33 /* QiitaVieweriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaVieweriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5912B862221217A009B1D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +99,6 @@
 		C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModelSpec.swift; sourceTree = "<group>"; };
 		C5912BD722228577009B1D33 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
 		C59A7FC5223CC48E00C8CE13 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModel.swift; sourceTree = "<group>"; };
 		C59A7FCA223DF97600C8CE13 /* ProfileImageModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModelSpec.swift; sourceTree = "<group>"; };
 		C5C25203222B9E21000BD03A /* ItemListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableCell.swift; sourceTree = "<group>"; };
 		C5C25207222B9E82000BD03A /* ItemListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableCell.xib; sourceTree = "<group>"; };
@@ -110,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C535A57722556FB20076C971 /* Nuke.framework in Frameworks */,
 				C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */,
 				C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */,
 				C5912BBD22213A81009B1D33 /* RxCocoa.framework in Frameworks */,
@@ -205,6 +206,7 @@
 		C5912BB922213A6C009B1D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C535A57622556FB20076C971 /* Nuke.framework */,
 				C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */,
 				C5912BCD2222845B009B1D33 /* Nimble.framework */,
 				C5912BCB2222844D009B1D33 /* Quick.framework */,
@@ -290,7 +292,6 @@
 			children = (
 				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
 				C59A7FC5223CC48E00C8CE13 /* Item.swift */,
-				C59A7FC7223DF5FE00C8CE13 /* ProfileImageModel.swift */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -463,6 +464,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -487,7 +489,6 @@
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
 				C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */,
-				C59A7FC8223DF5FE00C8CE13 /* ProfileImageModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +667,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSTH7J6D65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -688,6 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DSTH7J6D65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",

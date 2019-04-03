@@ -6,6 +6,7 @@
 //  Copyright © 2019 subta90. All rights reserved.
 //
 
+import Nuke
 import UIKit
 import RxCocoa
 import RxSwift
@@ -43,10 +44,13 @@ extension ItemListViewController: UITableViewDataSource {
         
         let title = viewModel.items[indexPath.row].title
         cell.titleLabel.text = title
-                
+        
+        if let url = URL(string: viewModel.items[indexPath.row].user.profileImageUrl) {
+            Nuke.loadImage(with: url, into: cell.profileImageView)
+        }
+        
         return cell
     }
-    
 }
 
 extension ItemListViewController {
