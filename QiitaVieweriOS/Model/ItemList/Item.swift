@@ -11,12 +11,12 @@ import Foundation
 struct Item: Codable {
     let title: String
     let user: User
-    
+
     private enum CodingKeys: String, CodingKey {
         case title
         case user
     }
-    
+
     init(title: String, user: User) {
         self.title = title
         self.user = user
@@ -26,12 +26,12 @@ struct Item: Codable {
 struct User: Codable {
     let id: String
     let profileImageUrl: String
-    
+
     private enum CodingKeys: String, CodingKey {
         case id
         case profileImageUrl = "profile_image_url"
     }
-    
+
     init(id: String, profileImageUrl: String) {
         self.id = id
         self.profileImageUrl = profileImageUrl

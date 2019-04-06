@@ -14,9 +14,9 @@ import RxSwift
 @testable import QiitaVieweriOS
 
 class ItemListModelSpec: QuickSpec {
-    
+
     let disposeBag = DisposeBag()
-    
+
     override func spec() {
         describe("fetchItems") {
             beforeEach {
@@ -28,7 +28,7 @@ class ItemListModelSpec: QuickSpec {
             afterEach {
                 OHHTTPStubs.removeAllStubs()
             }
-            
+
             context("when request to items.json") {
                 it("success to fetch") {
                     waitUntil(timeout: 5) { done in
@@ -42,11 +42,11 @@ class ItemListModelSpec: QuickSpec {
                             expect(items[1].user.id).to(equal("yaotti2"))
                             expect(items[1].user.profileImageUrl).to(equal("https://si0.twimg.com/profile_images/2309761038/1ijg13pfs0dg84sk2y0h_normal2.jpeg"))
                             done()
-                            }).disposed(by: self.disposeBag)
+                        }).disposed(by: self.disposeBag)
                     }
                 }
             }
         }
     }
-    
+
 }

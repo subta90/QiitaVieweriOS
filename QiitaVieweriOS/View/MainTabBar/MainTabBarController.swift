@@ -10,24 +10,20 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-private enum itemType: Int {
-    case list = 0
-}
-
 class MainTabBarController: UIViewController {
-    
+
     // MARK: Properties
-    
+
     @IBOutlet private weak var tabBar: UITabBar!
-    
+
     @IBOutlet private weak var contentView: UIView!
-    
+
     private var contentViewController: UIViewController? {
         didSet {
             guard contentViewController != nil else {
                 return
             }
-            
+
             oldValue?.willMove(toParent: nil)
             oldValue?.view.removeFromSuperview()
             oldValue?.removeFromParent()
@@ -35,17 +31,18 @@ class MainTabBarController: UIViewController {
             contentViewController?.didMove(toParent: self)
         }
     }
-    
+
     private let disposeBag = DisposeBag()
-    
+
     override func viewDidLoad() {
-        
-        let storyboard = UIStoryboard(name: "ItemListViewController", bundle: Bundle(for: ItemListViewController.self))
+
+        let storyboard = UIStoryboard(name: "ItemListViewController",
+                                      bundle: Bundle(for: ItemListViewController.self))
         let itemListViewController = storyboard.instantiateViewController(withIdentifier: "itemList") as! ItemListViewController
         contentViewController = itemListViewController
         itemListViewController.view.frame = contentView.bounds
         contentView.addSubview(itemListViewController.view)
-        
+
     }
-    
+
 }
