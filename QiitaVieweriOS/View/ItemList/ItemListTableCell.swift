@@ -9,15 +9,15 @@
 import UIKit
 
 final class ItemListTableCell: UITableViewCell {
-    
+
     @IBOutlet weak var userIdLabel: UILabel!
-    
+
     @IBOutlet weak var titleLabel: UILabel!
-    
+
     @IBOutlet weak var profileImageView: UIImageView!
-    
+
     override func awakeFromNib() {
-        
+
     }
-    
+
 }

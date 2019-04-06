@@ -327,7 +327,8 @@
 				C5912B7F2221217A009B1D33 /* Sources */,
 				C5912B802221217A009B1D33 /* Frameworks */,
 				C5912B812221217A009B1D33 /* Resources */,
-				C5912BBE222255CF009B1D33 /* ShellScript */,
+				C5912BBE222255CF009B1D33 /* Run Carthage */,
+				C539BC3F225867B900436A57 /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -449,7 +450,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C5912BBE222255CF009B1D33 /* ShellScript */ = {
+		C539BC3F225867B900436A57 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint autocorrect --format\nswiftlint\nelse\necho \"warning: SwiftLint is not installed, please download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		C5912BBE222255CF009B1D33 /* Run Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,6 +482,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
 			);
+			name = "Run Carthage";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -664,7 +684,7 @@
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DSTH7J6D65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -689,7 +709,7 @@
 				CLANG_ENABLE_CODE_COVERAGE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DSTH7J6D65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
