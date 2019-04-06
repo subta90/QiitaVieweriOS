@@ -19,6 +19,7 @@ workflows:
     - carthage@3.1.7:
         inputs:
         - carthage_command: bootstrap
+        - carthage_options: --platform ios --cache-builds
     - xcode-test@2.1.1:
         inputs:
         - project_path: "$BITRISE_PROJECT_PATH"
