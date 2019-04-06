@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C535A57722556FB20076C971 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C535A57622556FB20076C971 /* Nuke.framework */; };
 		C570A5452228A5D900B68BBE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; };
 		C570A5462228A5F800B68BBE /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912B862221217A009B1D33 /* AppDelegate.swift */; };
@@ -30,6 +31,9 @@
 		C5912BD122228497009B1D33 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5912BCB2222844D009B1D33 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */; };
 		C5912BD822228577009B1D33 /* items.json in Resources */ = {isa = PBXBuildFile; fileRef = C5912BD722228577009B1D33 /* items.json */; };
+		C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59A7FC5223CC48E00C8CE13 /* Item.swift */; };
+		C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C25203222B9E21000BD03A /* ItemListTableCell.swift */; };
+		C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5C25207222B9E82000BD03A /* ItemListTableCell.xib */; };
 		C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C535A57622556FB20076C971 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		C5912B832221217A009B1D33 /* QiitaVieweriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaVieweriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5912B862221217A009B1D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +97,9 @@
 		C5912BCD2222845B009B1D33 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListModelSpec.swift; sourceTree = "<group>"; };
 		C5912BD722228577009B1D33 /* items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = items.json; sourceTree = "<group>"; };
+		C59A7FC5223CC48E00C8CE13 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C5C25203222B9E21000BD03A /* ItemListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableCell.swift; sourceTree = "<group>"; };
+		C5C25207222B9E82000BD03A /* ItemListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableCell.xib; sourceTree = "<group>"; };
 		C5DDC83D222A68A800A6C9BB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C535A57722556FB20076C971 /* Nuke.framework in Frameworks */,
 				C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */,
 				C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */,
 				C5912BBD22213A81009B1D33 /* RxCocoa.framework in Frameworks */,
@@ -186,9 +195,8 @@
 		C5912BB42221378E009B1D33 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BB5222137B1009B1D33 /* ItemListViewController.swift */,
-				C5912BBF22225ADA009B1D33 /* ItemListViewController.storyboard */,
-				C5912BB722213954009B1D33 /* MainTabBarController.swift */,
+				C5EF65FF222BA10000095228 /* MainTabBar */,
+				C5C25200222B9DE1000BD03A /* ItemList */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 		C5912BB922213A6C009B1D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C535A57622556FB20076C971 /* Nuke.framework */,
 				C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */,
 				C5912BCD2222845B009B1D33 /* Nimble.framework */,
 				C5912BCB2222844D009B1D33 /* Quick.framework */,
@@ -210,7 +219,7 @@
 		C5912BC122226961009B1D33 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BC3222269C5009B1D33 /* ItemListViewModel.swift */,
+				C5EF65FE222BA0ED00095228 /* ItemList */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,7 +235,7 @@
 		C5912BD2222284AA009B1D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */,
+				C59A7FC9223DF94E00C8CE13 /* ItemList */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +257,25 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		C59A7FC9223DF94E00C8CE13 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BD3222284D7009B1D33 /* ItemListModelSpec.swift */,
+			);
+			path = ItemList;
+			sourceTree = "<group>";
+		};
+		C5C25200222B9DE1000BD03A /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BB5222137B1009B1D33 /* ItemListViewController.swift */,
+				C5912BBF22225ADA009B1D33 /* ItemListViewController.storyboard */,
+				C5C25203222B9E21000BD03A /* ItemListTableCell.swift */,
+				C5C25207222B9E82000BD03A /* ItemListTableCell.xib */,
+			);
+			path = ItemList;
+			sourceTree = "<group>";
+		};
 		C5DDC83C222A688700A6C9BB /* DataParser */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				C5912BC522226A26009B1D33 /* ItemListModel.swift */,
+				C59A7FC5223CC48E00C8CE13 /* Item.swift */,
 			);
 			path = ItemList;
 			sourceTree = "<group>";
@@ -270,6 +299,22 @@
 				C5DDC83C222A688700A6C9BB /* DataParser */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		C5EF65FE222BA0ED00095228 /* ItemList */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BC3222269C5009B1D33 /* ItemListViewModel.swift */,
+			);
+			path = ItemList;
+			sourceTree = "<group>";
+		};
+		C5EF65FF222BA10000095228 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5912BB722213954009B1D33 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */,
 				C5912B912221217D009B1D33 /* LaunchScreen.storyboard in Resources */,
 				C5912B8E2221217D009B1D33 /* Assets.xcassets in Resources */,
 				C5912BC022225ADA009B1D33 /* ItemListViewController.storyboard in Resources */,
@@ -415,6 +461,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -435,8 +482,10 @@
 				C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */,
 				C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */,
 				C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */,
+				C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */,
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
+				C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

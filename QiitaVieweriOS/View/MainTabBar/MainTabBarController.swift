@@ -42,6 +42,7 @@ class MainTabBarController: UIViewController {
         
         let storyboard = UIStoryboard(name: "ItemListViewController", bundle: Bundle(for: ItemListViewController.self))
         let itemListViewController = storyboard.instantiateViewController(withIdentifier: "itemList") as! ItemListViewController
+        contentViewController = itemListViewController
         itemListViewController.view.frame = contentView.bounds
         contentView.addSubview(itemListViewController.view)
         

@@ -10,18 +10,6 @@ import Foundation
 import APIKit
 import RxSwift
 
-struct Item: Codable {
-    let id: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case id
-    }
-    
-    init(id: String) {
-        self.id = id
-    }
-}
-
 struct GetItemsRequest: Request {
     
     typealias Response = [Item]
@@ -78,21 +66,25 @@ protocol ItemListModelProtocol {
 
 class ItemListModel: ItemListModelProtocol {
     
+    private let session = Session(adapter: URLSessionAdapter(configuration: .default))
+    
     func fetchItems(page: String, perPage: String, query: String?) -> Observable<[Item]> {
         return Observable.create { observer in
             let request = GetItemsRequest(page: page, perPage: perPage, query: query)
             
-            Session.send(request) { result in
+            let task = Session.send(request) { result in
                 switch result {
                 case .success(let items):
-                    print("items: \(items)")
                     observer.onNext(items)
                     observer.onCompleted()
                 case .failure(let error):
                     observer.onError(error)
                 }
             }
-            return Disposables.create()
+            
+            return Disposables.create() {
+                task?.cancel()
+            }
         }
     }
 }

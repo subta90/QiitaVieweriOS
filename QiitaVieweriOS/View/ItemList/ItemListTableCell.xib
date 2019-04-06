@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ItemListTableCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="99" id="m4k-Gd-E9e" customClass="ItemListTableCell" customModule="QiitaVieweriOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="502" height="99"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m4k-Gd-E9e" id="pHx-R0-HUD">
+                <rect key="frame" x="0.0" y="0.0" width="502" height="98.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6d-zi-25v">
+                        <rect key="frame" x="118" y="30" width="70.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0fI-qJ-jdN"/>
+                            <constraint firstAttribute="width" constant="300" id="LJT-r4-pS6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vrk-AR-g0j" userLabel="profileImageView">
+                        <rect key="frame" x="8" y="11" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="73d-bJ-v4Q"/>
+                            <constraint firstAttribute="height" constant="80" id="kJq-ZV-7Vd"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserId" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qqM-OD-PNu" userLabel="userIdLabel">
+                        <rect key="frame" x="118" y="11" width="70.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="oSe-0b-dPb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z6d-zi-25v" firstAttribute="leading" secondItem="vrk-AR-g0j" secondAttribute="trailing" constant="30" id="3rO-1v-dcD"/>
+                    <constraint firstAttribute="bottom" secondItem="vrk-AR-g0j" secondAttribute="bottom" constant="7.5" id="4bR-fk-YW3"/>
+                    <constraint firstItem="z6d-zi-25v" firstAttribute="top" secondItem="pHx-R0-HUD" secondAttribute="top" constant="30" id="Cac-PF-VHf"/>
+                    <constraint firstItem="z6d-zi-25v" firstAttribute="top" secondItem="qqM-OD-PNu" secondAttribute="bottom" constant="-1" id="DWE-fR-TS3"/>
+                    <constraint firstItem="qqM-OD-PNu" firstAttribute="leading" secondItem="vrk-AR-g0j" secondAttribute="trailing" constant="30" id="ijq-5F-DOk"/>
+                    <constraint firstItem="vrk-AR-g0j" firstAttribute="leading" secondItem="pHx-R0-HUD" secondAttribute="leading" constant="8" id="mcz-KQ-Yer"/>
+                    <constraint firstItem="qqM-OD-PNu" firstAttribute="top" secondItem="pHx-R0-HUD" secondAttribute="top" constant="11" id="oWW-dF-Dat"/>
+                    <constraint firstAttribute="trailing" secondItem="z6d-zi-25v" secondAttribute="trailing" constant="10" id="oaK-TW-HCv"/>
+                    <constraint firstItem="vrk-AR-g0j" firstAttribute="top" secondItem="pHx-R0-HUD" secondAttribute="top" constant="11" id="rRk-HZ-wul"/>
+                    <constraint firstAttribute="trailing" secondItem="qqM-OD-PNu" secondAttribute="trailing" constant="10" id="wEl-CH-XUr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="profileImageView" destination="vrk-AR-g0j" id="kvX-3m-Jea"/>
+                <outlet property="titleLabel" destination="z6d-zi-25v" id="Bxx-Ou-zsQ"/>
+                <outlet property="userIdLabel" destination="qqM-OD-PNu" id="kqq-Zh-NGZ"/>
+            </connections>
+            <point key="canvasLocation" x="233.59999999999999" y="179.46026986506749"/>
+        </tableViewCell>
+    </objects>
+</document>

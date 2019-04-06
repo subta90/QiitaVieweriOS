@@ -32,6 +32,9 @@ DerivedData/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+## Signer
+XCodeSigner*
+
 ### Carthage ###
 Carthage/
 # End of https://www.gitignore.io/api/xcode
