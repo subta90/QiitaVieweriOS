@@ -71,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		C535A57622556FB20076C971 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		C54DAA99225887AB001487FF /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		C5912B832221217A009B1D33 /* QiitaVieweriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QiitaVieweriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5912B862221217A009B1D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +205,7 @@
 		C5912BB922213A6C009B1D33 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C54DAA99225887AB001487FF /* Rswift.framework */,
 				C535A57622556FB20076C971 /* Nuke.framework */,
 				C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */,
 				C5912BCD2222845B009B1D33 /* Nimble.framework */,
@@ -329,6 +331,7 @@
 				C5912B812221217A009B1D33 /* Resources */,
 				C5912BBE222255CF009B1D33 /* Run Carthage */,
 				C539BC3F225867B900436A57 /* Run Swiftlint */,
+				C528F9242265464D00A59DE4 /* Generate Rswift */,
 			);
 			buildRules = (
 			);
@@ -450,6 +453,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C528F9242265464D00A59DE4 /* Generate Rswift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "Generate Rswift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		C539BC3F225867B900436A57 /* Run Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
