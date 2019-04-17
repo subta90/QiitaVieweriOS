@@ -28,17 +28,14 @@ final class ItemListViewModel {
     let reloadData: Observable<Void>
 
     // MARK: Life Cycle
-    init(page: String,
-         perPage: String,
-         query: String?,
-         itemListModel: ItemListModelProtocol = ItemListModel()) {
+    init(itemListModel: ItemListModelProtocol = ItemListModel()) {
         self.itemListModel = itemListModel
 
-        self.itemListModel.fetchItems(page: page,
-                                      perPage: perPage,
-                                      query: query)
-            .bind(to: itemsRelay).disposed(by: disposeBag)
-
         self.reloadData = itemsRelay.map { _ in }
+    }
+
+    func fetchItems(page: String, perPage: String, query: String?) {
+        self.itemListModel.fetchItems(page: page, perPage: perPage, query: query)
+            .bind(to: itemsRelay).disposed(by: disposeBag)
     }
 }
