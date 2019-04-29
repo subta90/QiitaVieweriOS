@@ -9,15 +9,18 @@
 import Foundation
 
 struct Item: Codable {
+    let id: String
     let title: String
     let user: User
 
     private enum CodingKeys: String, CodingKey {
+        case id
         case title
         case user
     }
 
-    init(title: String, user: User) {
+    init(id: String, title: String, user: User) {
+        self.id = id
         self.title = title
         self.user = user
     }

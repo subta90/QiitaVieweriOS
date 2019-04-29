@@ -38,3 +38,6 @@ XCodeSigner*
 ### Carthage ###
 Carthage/
 # End of https://www.gitignore.io/api/xcode
+
+## Others
+*.DS_Store

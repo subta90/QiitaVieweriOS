@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C530809B22757F2D00AEF55D /* ItemDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C530809822757F2D00AEF55D /* ItemDetail.storyboard */; };
+		C530809C22757F2D00AEF55D /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C530809922757F2D00AEF55D /* ItemDetailViewController.swift */; };
+		C53080A3227588F800AEF55D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53080A12275861D00AEF55D /* R.generated.swift */; };
+		C53080A4227589F400AEF55D /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54DAA99225887AB001487FF /* Rswift.framework */; };
+		C53080AA227598E400AEF55D /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53080A9227598E400AEF55D /* ItemDetail.swift */; };
+		C53080AC22759AA500AEF55D /* ItemDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53080AB22759AA500AEF55D /* ItemDetailModel.swift */; };
+		C53080AE22759DC700AEF55D /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53080AD22759DC700AEF55D /* ItemDetailViewModel.swift */; };
+		C53080B22275A36400AEF55D /* ItemDetailModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53080B12275A36400AEF55D /* ItemDetailModelSpec.swift */; };
+		C53080B42275A3E500AEF55D /* itemDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = C53080B32275A3E500AEF55D /* itemDetail.json */; };
 		C535A57722556FB20076C971 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C535A57622556FB20076C971 /* Nuke.framework */; };
 		C570A5452228A5D900B68BBE /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; };
 		C570A5462228A5F800B68BBE /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -70,6 +79,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C530809822757F2D00AEF55D /* ItemDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetail.storyboard; sourceTree = "<group>"; };
+		C530809922757F2D00AEF55D /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		C53080A12275861D00AEF55D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		C53080A9227598E400AEF55D /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
+		C53080AB22759AA500AEF55D /* ItemDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailModel.swift; sourceTree = "<group>"; };
+		C53080AD22759DC700AEF55D /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		C53080B12275A36400AEF55D /* ItemDetailModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailModelSpec.swift; sourceTree = "<group>"; };
+		C53080B32275A3E500AEF55D /* itemDetail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = itemDetail.json; sourceTree = "<group>"; };
 		C535A57622556FB20076C971 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
 		C54DAA99225887AB001487FF /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		C570A5442228A5D900B68BBE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
@@ -109,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53080A4227589F400AEF55D /* Rswift.framework in Frameworks */,
 				C535A57722556FB20076C971 /* Nuke.framework in Frameworks */,
 				C5912BCA22227F52009B1D33 /* Result.framework in Frameworks */,
 				C5912BC822226EE6009B1D33 /* APIKit.framework in Frameworks */,
@@ -137,9 +155,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C530809622757F2D00AEF55D /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C530809822757F2D00AEF55D /* ItemDetail.storyboard */,
+				C530809922757F2D00AEF55D /* ItemDetailViewController.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		C53080A6227598A300AEF55D /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C53080AD22759DC700AEF55D /* ItemDetailViewModel.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		C53080A8227598C400AEF55D /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C53080A9227598E400AEF55D /* ItemDetail.swift */,
+				C53080AB22759AA500AEF55D /* ItemDetailModel.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+		C53080B02275A35000AEF55D /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				C53080B12275A36400AEF55D /* ItemDetailModelSpec.swift */,
+			);
+			name = ItemDetail;
+			path = QiitaVieweriOSTests/src/Model/ItemDetail;
+			sourceTree = SOURCE_ROOT;
+		};
 		C5912B7A2221217A009B1D33 = {
 			isa = PBXGroup;
 			children = (
+				C53080A12275861D00AEF55D /* R.generated.swift */,
 				C5912B852221217A009B1D33 /* QiitaVieweriOS */,
 				C5912B9A2221217D009B1D33 /* QiitaVieweriOSTests */,
 				C5912BA52221217E009B1D33 /* QiitaVieweriOSUITests */,
@@ -196,6 +250,7 @@
 		C5912BB42221378E009B1D33 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C530809622757F2D00AEF55D /* ItemDetail */,
 				C5EF65FF222BA10000095228 /* MainTabBar */,
 				C5C25200222B9DE1000BD03A /* ItemList */,
 			);
@@ -221,6 +276,7 @@
 		C5912BC122226961009B1D33 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C53080A6227598A300AEF55D /* ItemDetail */,
 				C5EF65FE222BA0ED00095228 /* ItemList */,
 			);
 			path = ViewModel;
@@ -229,6 +285,7 @@
 		C5912BC22222696B009B1D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C53080A8227598C400AEF55D /* ItemDetail */,
 				C5DDC83F222A690700A6C9BB /* ItemList */,
 			);
 			path = Model;
@@ -237,6 +294,7 @@
 		C5912BD2222284AA009B1D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C53080B02275A35000AEF55D /* ItemDetail */,
 				C59A7FC9223DF94E00C8CE13 /* ItemList */,
 			);
 			path = Model;
@@ -255,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				C5912BD722228577009B1D33 /* items.json */,
+				C53080B32275A3E500AEF55D /* itemDetail.json */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -326,12 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5912BAB2221217E009B1D33 /* Build configuration list for PBXNativeTarget "QiitaVieweriOS" */;
 			buildPhases = (
-				C5912B7F2221217A009B1D33 /* Sources */,
-				C5912B802221217A009B1D33 /* Frameworks */,
-				C5912B812221217A009B1D33 /* Resources */,
 				C5912BBE222255CF009B1D33 /* Run Carthage */,
-				C539BC3F225867B900436A57 /* Run Swiftlint */,
+				C5912B802221217A009B1D33 /* Frameworks */,
 				C528F9242265464D00A59DE4 /* Generate Rswift */,
+				C5912B7F2221217A009B1D33 /* Sources */,
+				C5912B812221217A009B1D33 /* Resources */,
+				C539BC3F225867B900436A57 /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -428,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5C25208222B9E82000BD03A /* ItemListTableCell.xib in Resources */,
+				C530809B22757F2D00AEF55D /* ItemDetail.storyboard in Resources */,
 				C5912B912221217D009B1D33 /* LaunchScreen.storyboard in Resources */,
 				C5912B8E2221217D009B1D33 /* Assets.xcassets in Resources */,
 				C5912BC022225ADA009B1D33 /* ItemListViewController.storyboard in Resources */,
@@ -440,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5912BD822228577009B1D33 /* items.json in Resources */,
+				C53080B42275A3E500AEF55D /* itemDetail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +565,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Rswift.framework",
 			);
 			name = "Run Carthage";
 			outputFileListPaths = (
@@ -521,11 +583,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53080A3227588F800AEF55D /* R.generated.swift in Sources */,
+				C53080AA227598E400AEF55D /* ItemDetail.swift in Sources */,
 				C5912BC622226A26009B1D33 /* ItemListModel.swift in Sources */,
+				C53080AE22759DC700AEF55D /* ItemDetailViewModel.swift in Sources */,
 				C5912B872221217A009B1D33 /* AppDelegate.swift in Sources */,
 				C5DDC83E222A68A800A6C9BB /* DecodableDataParser.swift in Sources */,
 				C5912BC4222269C5009B1D33 /* ItemListViewModel.swift in Sources */,
 				C59A7FC6223CC48E00C8CE13 /* Item.swift in Sources */,
+				C53080AC22759AA500AEF55D /* ItemDetailModel.swift in Sources */,
+				C530809C22757F2D00AEF55D /* ItemDetailViewController.swift in Sources */,
 				C5912BB6222137B1009B1D33 /* ItemListViewController.swift in Sources */,
 				C5912BB822213954009B1D33 /* MainTabBarController.swift in Sources */,
 				C5C25204222B9E21000BD03A /* ItemListTableCell.swift in Sources */,
@@ -537,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5912B9C2221217D009B1D33 /* QiitaVieweriOSTests.swift in Sources */,
+				C53080B22275A36400AEF55D /* ItemDetailModelSpec.swift in Sources */,
 				C5912BD4222284D7009B1D33 /* ItemListModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

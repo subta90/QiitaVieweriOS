@@ -10,6 +10,7 @@ import Nuke
 import UIKit
 import RxCocoa
 import RxSwift
+import Rswift
 
 class ItemListViewController: UIViewController {
 
@@ -34,12 +35,18 @@ class ItemListViewController: UIViewController {
         self.viewModel.fetchItems(page: "1", perPage: "10", query: nil)
         bind()
     }
-    
+
     private func bind() {
         refreshControl.rx.controlEvent(.valueChanged).asDriver().drive(onNext: { [unowned self] _ in
             self.viewModel.fetchItems(page: "2", perPage: "10", query: nil)
         }).disposed(by: disposeBag)
-        
+
+        tableView.rx.itemSelected.subscribe { [ unowned self ] index in
+            let itemDetailViewController = R.storyboard.itemDetail.itemDetail()!
+            itemDetailViewController.itemId = self.viewModel.items[index.element!.row].id
+            self.navigationController?.pushViewController(itemDetailViewController, animated: true)
+            }.disposed(by: disposeBag)
+
         viewModel.reloadData.bind(to: self.reloadData).disposed(by: disposeBag)
     }
 }
